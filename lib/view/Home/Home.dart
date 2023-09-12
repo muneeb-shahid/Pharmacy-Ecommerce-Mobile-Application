@@ -35,37 +35,42 @@ class Home extends StatelessWidget {
                 ]),
                 Positioned(
                     child: Padding(
-                  padding: const EdgeInsets.only(left: 20, right: 20),
+                  padding: EdgeInsets.only(left: 20, right: 20),
                   child: Form(
                     key: homeController.formKey,
-                    child: TextFormField(
-                      controller: homeController.SearchEditingController,
-                      focusNode: homeController.focusNode1,
-                      onFieldSubmitted: (value) {
-                        FocusScope.of(context)
-                            .requestFocus(homeController.focusNode2);
-                      },
-                      style: TextStyle(
-                          color: App_Constants_Colors.app_black_color),
-                      decoration: InputDecoration(
-                        filled: true,
-                        fillColor: App_Constants_Colors.app_white_color,
-                        hintText: 'Search Products Here',
-                        hintStyle: TextStyle(
-                            color: App_Constants_Colors.app_blue_color),
-                        focusedBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(30),
-                          borderSide: const BorderSide(
-                            width: 2,
-                            color: Colors.white,
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
+                    child: Material(
+                      elevation: 20.0,
+                      borderRadius: BorderRadius.circular(30),
+                      shadowColor: App_Constants_Colors.app_white_color,
+                      child: TextFormField(
+                        controller: homeController.SearchEditingController,
+                        focusNode: homeController.focusNode1,
+                        onFieldSubmitted: (value) {
+                          FocusScope.of(context)
+                              .requestFocus(homeController.focusNode2);
+                        },
+                        style: TextStyle(
+                            color: App_Constants_Colors.app_black_color),
+                        decoration: InputDecoration(
+                          filled: true,
+                          fillColor: App_Constants_Colors.app_white_color,
+                          hintText: 'Search Products Here',
+                          hintStyle: TextStyle(
+                              color: App_Constants_Colors.app_blue_color),
+                          focusedBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30),
-                            borderSide: BorderSide(
-                                color: App_Constants_Colors.app_white_color)),
-                        prefixIcon: Icon(Icons.search,
-                            color: App_Constants_Colors.app_blue_color),
+                            borderSide: const BorderSide(
+                              width: 2,
+                              color: Colors.white,
+                            ),
+                          ),
+                          enabledBorder: OutlineInputBorder(
+                              borderRadius: BorderRadius.circular(30),
+                              borderSide: BorderSide(
+                                  color: App_Constants_Colors.app_white_color)),
+                          prefixIcon: Icon(Icons.search,
+                              color: App_Constants_Colors.app_blue_color),
+                        ),
                       ),
                     ),
                   ),
