@@ -207,8 +207,7 @@ class Home extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 20, right: 20),
                   child: Container(
-                    // color: Colors.amber,
-                    height: heightt * 0.5,
+                    height: heightt * 0.46,
                     width: double.infinity,
                     child: ListView.separated(
                       shrinkWrap: true,
@@ -227,10 +226,12 @@ class Home extends StatelessWidget {
                     ),
                   ),
                 ),
-SizedBox(
-                  height: heightt * 0.1,
+                SizedBox(
+                  height: heightt * 0.02,
                 ),
-                Text("data")
+                HomeCategoryName(
+                  "Shop by Health Concerns",
+                ),
               ],
             ),
           ))

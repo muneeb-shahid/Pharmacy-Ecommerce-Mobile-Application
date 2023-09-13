@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 
 
 
@@ -21,16 +23,16 @@ customLogin_SignupButton(
       height: screenHeight * 0.07,
       width: screenWidth * 0.8,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(5),
+        borderRadius: BorderRadius.circular(50),
         color: innerColor,
       ),
       child: Center(
           child: Text(
         text,
         style: TextStyle(
-            fontFamily: 'Inter',
-            fontSize: 18,
-            fontWeight: FontWeight.w700,
+            fontFamily: App_Fonts_Constants.heading_font_family,
+            fontSize:App_Fonts_Constants.sub_heading_font_size.sp,
+            fontWeight: FontWeight.bold,
             color: textColor),
       )),
     ),

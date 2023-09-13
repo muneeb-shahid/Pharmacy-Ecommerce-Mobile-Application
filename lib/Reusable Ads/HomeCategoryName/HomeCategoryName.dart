@@ -13,7 +13,7 @@ HomeCategoryName(String HomeCategoryName,) {
           HomeCategoryName,
           style: TextStyle(
               color: App_Constants_Colors.app_blue_color,
-              fontSize: App_Fonts_Constants.heading_font_size.sp,
+              fontSize: App_Fonts_Constants.sub_heading_font_size.sp,
               fontFamily: App_Fonts_Constants.heading_font_family,
               fontWeight: FontWeight.bold),
         ),
