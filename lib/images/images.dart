@@ -9,6 +9,7 @@ class App_Images {
   static String AdCard_5 = "assets/images/AdCard 5.jpeg";
   
   static String clock = "assets/images/clock.png";
+  static String notes = "assets/images/notes.png";
 
 
 
