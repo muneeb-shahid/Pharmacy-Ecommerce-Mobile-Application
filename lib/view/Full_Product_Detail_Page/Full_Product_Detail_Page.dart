@@ -63,19 +63,21 @@ class Full_Product_Detail_Page extends StatelessWidget {
                           ),
                         ),
                       ),
-                      Image(
-                          height: heightt * 0.3,
-                          width: widthh * 0.8,
-                          image: AssetImage("${Get.arguments['image']}")),
+                      InteractiveViewer(
+                        maxScale: 5.0,
+                        minScale:0.01,
+                        child: Image(
+                            height: heightt * 0.3,
+                            width: widthh * 0.8,
+                            image: AssetImage("${Get.arguments['image']}")),
+                      ),
                       const Padding(
-                        padding: const EdgeInsets.only(left: 20, right: 20),
+                        padding: EdgeInsets.only(left: 20, right: 20),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             Row(
-                              children: [
-                                
-                              ],
+                              children: [],
                             ),
                             Row(
                               children: [
