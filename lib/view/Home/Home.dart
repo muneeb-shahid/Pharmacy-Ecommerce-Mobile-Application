@@ -4,6 +4,8 @@ import 'package:get/get.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/controller/HomeController/HomeController.dart';
 
+import '../../Model/AdCardItem/AdCardItem.dart';
+import '../../Reusable Ads/HomeAdCardItem/Homeadcarditem.dart';
 import '../../images/images.dart';
 
 class Home extends StatelessWidget {
@@ -76,6 +78,26 @@ class Home extends StatelessWidget {
                   ),
                 ))
               ],
+            ),
+            SizedBox(
+              height: heightt * 0.02,
+            ),
+            Padding(
+              padding:  EdgeInsets.only(left: 20,right: 20),
+              child: Container(
+                height: heightt * 0.2,
+                child: ListView.separated(
+                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
+                  itemCount: adcarditem.length,
+                  itemBuilder: (context, index) {
+                    return buildCard(adcarditem: adcarditem[index]);
+                  },
+                  separatorBuilder: (context, index) => SizedBox(
+                    width: widthh * 0.05,
+                  ),
+                ),
+              ),
             )
           ],
         ),
