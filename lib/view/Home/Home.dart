@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:get/get.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
+import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:servaid/controller/HomeController/HomeController.dart';
 
-import '../../Model/AdCardItem/AdCardItem.dart';
 import '../../Reusable Ads/HomeAdCardItem/Homeadcarditem.dart';
 import '../../images/images.dart';
 
@@ -83,7 +83,7 @@ class Home extends StatelessWidget {
               height: heightt * 0.02,
             ),
             Padding(
-              padding:  EdgeInsets.only(left: 20,right: 20),
+              padding: EdgeInsets.only(left: 20, right: 20),
               child: Container(
                 height: heightt * 0.2,
                 child: ListView.separated(
@@ -98,7 +98,95 @@ class Home extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: heightt * 0.02,
+            ),
+            Padding(
+              padding: EdgeInsets.only(left: 20, right: 20),
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: [
+                   
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                          height: heightt * 0.2,
+                          width: widthh * 0.45,
+                          color: App_Constants_Colors.app_pink_color,
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              children: [
+                                Text(
+                                  "Place your order istantly within seconds.",
+                                  style: TextStyle(
+                                      color:
+                                          App_Constants_Colors.app_white_color,
+                                      fontFamily: App_Fonts_Constants
+                                          .regular_font_family),
+                                ),
+                                SizedBox(
+                                  height: heightt * 0.02,
+                                ),
+                                ListTile(
+                                    leading: Icon(
+                                      Icons.arrow_forward_ios_outlined,
+                                      color:
+                                          App_Constants_Colors.app_white_color,
+                                    ),
+                                    trailing: Image.asset(
+                                      App_Images.clock,
+                                    ))
+                              ],
+                            ),
+                          )),
+                    ),
+                   
+                    SizedBox(
+                      width: widthh * 0.02,
+                    ),
+                  
+                    ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Container(
+                          height: heightt * 0.2,
+                          width: widthh * 0.45,
+                          color: App_Constants_Colors.app_pink_color,
+                          child: Padding(
+                            padding: const EdgeInsets.all(12.0),
+                            child: Column(
+                              children: [
+                                Text(
+                                  "Got a prescription?\nUpload and get your meds now!.",
+                                  style: TextStyle(
+                                      color:
+                                          App_Constants_Colors.app_white_color,
+                                      fontFamily: App_Fonts_Constants
+                                          .regular_font_family),
+                                ),
+                                SizedBox(
+                                  height: heightt * 0.02,
+                                ),
+                                ListTile(
+                                    leading: Icon(
+                                      Icons.arrow_forward_ios_outlined,
+                                      color:
+                                          App_Constants_Colors.app_white_color,
+                                    ),
+                                    trailing: Image.asset(
+                                      App_Images.clock,
+                                    ))
+                              ],
+                            ),
+                          )),
+                    ),
+                   
+                  ],
+                ),
+              ),
+            ),
           ],
         ),
       ),

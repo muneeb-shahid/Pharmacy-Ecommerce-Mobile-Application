@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 import '../../Model/AdCardItem/AdCardItem.dart';
@@ -14,7 +16,6 @@ List<AdCardItem> adcarditem = [
 Widget buildCard({
   required AdCardItem adcarditem,
 }) =>
-
     ClipRRect(
       borderRadius: BorderRadius.circular(10),
       child: Image(
