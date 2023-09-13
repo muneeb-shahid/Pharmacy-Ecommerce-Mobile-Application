@@ -10,6 +10,9 @@ class App_Images {
   
   static String clock = "assets/images/clock.png";
   static String notes = "assets/images/notes.png";
+  static String coin = "assets/images/coin.png";
+
+
 
 
 
