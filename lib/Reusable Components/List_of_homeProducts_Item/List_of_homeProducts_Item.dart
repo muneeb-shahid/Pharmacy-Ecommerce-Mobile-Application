@@ -19,7 +19,10 @@ List<HomeProductsItem> List_of_homeProducts_Item = [
           "Just for an oral route only. Overdose increases the risks of side effects. to prepare, add four scoops (of powder) in a glass of water.",
       sideEffects:
           "In rare cases, it showed digestive problems, including abdominal pain & cramps, bloating, gas, and diarrhea, etc.",
-      coinPrice: "Rs. 1896/Pack"),
+      coinPrice: "Rs. 1896/Pack",
+
+reviews: ""
+      ),
   HomeProductsItem(
       image: App_Images.babyCare2,
       title: "Enfamil A+2 400G Baby Milk Powder",
@@ -31,7 +34,7 @@ List<HomeProductsItem> List_of_homeProducts_Item = [
           "Just for an oral route only. Overdose increases the risks of side effects. to prepare, add four scoops (of powder) in a glass of water.",
       sideEffects:
           "In rare cases, it showed digestive problems, including abdominal pain & cramps, bloating, gas, and diarrhea, etc.",
-      coinPrice: "Rs. 4691/Pack"),
+      coinPrice: "Rs. 4691/Pack",reviews: ""),
   HomeProductsItem(
       image: App_Images.babyCare3,
       title: "Morinaga Bf-3 Growing Up 400G Baby Milk Powder",
@@ -43,7 +46,7 @@ List<HomeProductsItem> List_of_homeProducts_Item = [
           "Just for an oral route only. Overdose increases the risks of side effects. to prepare, add four scoops (of powder) in a glass of water.",
       sideEffects:
           "In rare cases, it showed digestive problems, including abdominal pain & cramps, bloating, gas, and diarrhea, etc.",
-      coinPrice: "Rs. 2550/Pack"),
+      coinPrice: "Rs. 2550/Pack",reviews: ""),
   HomeProductsItem(
       image: App_Images.babyCare4,
       title: "Pediasure Triple Sure Vanilla 400G Baby Milk Powder",
@@ -100,7 +103,7 @@ Maybe all of the advantages are not described here. So, consult the doctor for m
 The PediaSure contains natural sugar ingredients. So, the excessive use of this product leads to high weight gain and some other dental issues.
 PediaSure can cause gastrointestinal issues as it contains some fibre and soy protein. If these ingredients are taken in excessive amounts, then they can cause nausea, constipation.
 As PediaSure is fully nutrition. Therefore, after its intake child may not need normal food. Also, its use for a long time may lead to the step that the child prefers sugar foods instead of sugar-free.''',
-      coinPrice: "Rs. 2400/Pack"),
+      coinPrice: "Rs. 2400/Pack",reviews: ""),
   HomeProductsItem(
       image: App_Images.babyCare5,
       title: "Nido Bunyad 600G Baby Milk Powder",
@@ -110,7 +113,7 @@ As PediaSure is fully nutrition. Therefore, after its intake child may not need 
           "Iron-rich milk prevents iron deficiency anemia (low blood count). Keeps children energetic and fatigue-free. Improves their focus, physical, and mental health.",
       precautions: "Store in a cool and dry place.",
       sideEffects: "No side effects are reported yet.",
-      coinPrice: "Rs. 920/Pack"),
+      coinPrice: "Rs. 920/Pack",reviews: ""),
 ];
 
 Widget buildHomeProductsItem(
@@ -126,6 +129,7 @@ Widget buildHomeProductsItem(
           "precautions": List_of_homeProducts_Item.precautions,
           "sideEffects": List_of_homeProducts_Item.sideEffects,
           "coinPrice": List_of_homeProducts_Item.coinPrice,
+           "reviews:" : List_of_homeProducts_Item.reviews,
         });
       },
       child: ClipRRect(
@@ -143,7 +147,9 @@ Widget buildHomeProductsItem(
                       children: [
                         Image(
                             height: height * 0.2,
+                            fit: BoxFit.cover,
                             image: AssetImage(
+                              
                               App_Images.coin,
                             )),
                         SizedBox(
@@ -170,7 +176,7 @@ Widget buildHomeProductsItem(
               Container(
                 alignment: Alignment.center,
                 width: width,
-                height: height * 0.3,
+                height: height * 0.2,
                 child: Padding(
                   padding: const EdgeInsets.only(left: 10, right: 10),
                   child: Text(
@@ -184,7 +190,7 @@ Widget buildHomeProductsItem(
                   ),
                 ),
               ),
-              SizedBox(height: height * 0.1),
+              SizedBox(height: height * 0.05),
               Text(
                 List_of_homeProducts_Item.price,
                 style: TextStyle(
@@ -192,7 +198,7 @@ Widget buildHomeProductsItem(
                     fontFamily: App_Fonts_Constants.regular_font_family,
                     fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: height * 0.1),
+              SizedBox(height: height * 0.05),
               Padding(
                 padding: EdgeInsets.only(left: 120),
                 child: ClipOval(

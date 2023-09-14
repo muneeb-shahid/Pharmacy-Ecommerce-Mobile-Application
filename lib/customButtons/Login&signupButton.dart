@@ -20,8 +20,8 @@ customLogin_SignupButton(
     
     child: Container(
       
-      height: screenHeight * 0.07,
-      width: screenWidth * 0.8,
+      height: screenHeight * 0.06,
+      width: screenWidth * 0.6,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(50),
         color: innerColor,

@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:get/get.dart';
-import 'package:servaid/Reusable%20Ads/List_of_homeProducts_Item/List_of_homeProducts_Item.dart';
+import 'package:servaid/Reusable%20Components/List_of_homeProducts_Item/List_of_homeProducts_Item.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:servaid/controller/HomeController/HomeController.dart';
 
-import '../../Reusable Ads/HomeAdCardItem/Homeadcarditem.dart';
-import '../../Reusable Ads/HomeCategoryName/HomeCategoryName.dart';
+import '../../Reusable Components/HomeAdCardItem/Homeadcarditem.dart';
+import '../../Reusable Components/HomeCategoryName/HomeCategoryName.dart';
 import '../../images/images.dart';
 
 class Home extends StatelessWidget {
@@ -207,7 +207,7 @@ class Home extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 20, right: 20),
                   child: Container(
-                    height: heightt * 0.46,
+                    height: heightt * 0.42,
                     width: double.infinity,
                     child: ListView.separated(
                       shrinkWrap: true,
@@ -221,7 +221,7 @@ class Home extends StatelessWidget {
                                 List_of_homeProducts_Item[index]);
                       },
                       separatorBuilder: (context, index) => SizedBox(
-                        width: widthh * 0.05,
+                        width: widthh * 0.02,
                       ),
                     ),
                   ),

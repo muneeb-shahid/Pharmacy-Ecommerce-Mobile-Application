@@ -7,6 +7,8 @@ class HomeProductsItem {
   final String precautions;
   final String sideEffects;
   final String coinPrice;
+  final String reviews;
+
 
   HomeProductsItem({
     required this.image,
@@ -17,5 +19,7 @@ class HomeProductsItem {
     required this.precautions,
     required this.sideEffects,
     required this.coinPrice,
+    required this.reviews,
+
   });
 }
