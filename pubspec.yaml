@@ -38,6 +38,9 @@ dependencies:
   get: ^4.6.5
   flutter_screenutil: ^5.7.0
   flutter_custom_clippers: ^2.1.0
+  share_plus: ^7.1.0
+  readmore: ^2.2.0
+
 
 dev_dependencies:
   flutter_test:

@@ -1,8 +1,12 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
+import 'package:readmore/readmore.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
-import '../../Reusable Ads/List_of_homeProducts_Item/List_of_homeProducts_Item.dart';
+import 'package:share_plus/share_plus.dart';
 import '../../customButtons/Login&signupButton.dart';
 import '../../images/images.dart';
 
@@ -22,11 +26,13 @@ class Full_Product_Detail_Page extends StatelessWidget {
       body: CustomScrollView(
         slivers: <Widget>[
           SliverFillRemaining(
-            child: Column(
+            child:
+            
+             Column(
               children: [
                 Container(
                   color: Colors.white,
-                  height: heightt * 0.4,
+                  height: heightt * 0.45,
                   width: double.infinity,
                   child: Column(
                     children: [
@@ -65,34 +71,100 @@ class Full_Product_Detail_Page extends StatelessWidget {
                       ),
                       InteractiveViewer(
                         maxScale: 5.0,
-                        minScale:0.01,
+                        minScale: 0.01,
                         child: Image(
                             height: heightt * 0.3,
                             width: widthh * 0.8,
                             image: AssetImage("${Get.arguments['image']}")),
                       ),
-                      const Padding(
-                        padding: EdgeInsets.only(left: 20, right: 20),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
-                              children: [],
-                            ),
-                            Row(
-                              children: [
-                                Text(
-                                  "shahid",
-                                  style: TextStyle(color: Colors.black),
-                                )
-                              ],
-                            ),
-                          ],
-                        ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.end,
+                        children: [
+                          IconButton(
+                              onPressed: () async {
+                                await Share.share(Get.arguments["title"]);
+                              },
+                              icon: Icon(Icons.share))
+                        ],
                       )
                     ],
                   ),
                 ),
+                Container(
+                  color: App_Constants_Colors.app_background_color,
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20, right: 20),
+                    child: Column(
+                      children: [
+                        SizedBox(
+                          height: heightt * 0.02,
+                        ),
+                        Text(
+                          Get.arguments["title"],
+                          style: TextStyle(
+                              color: App_Constants_Colors.app_blue_color,
+                              fontFamily:
+                                  App_Fonts_Constants.heading_font_family,
+                              fontSize:
+                                  App_Fonts_Constants.sub_heading_font_size.sp,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              Get.arguments["companyName"],
+                              style: TextStyle(
+                                color: App_Constants_Colors.app_black_color,
+                                fontFamily:
+                                    App_Fonts_Constants.heading_font_family,
+                                fontSize: App_Fonts_Constants.text_font_size.sp,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Row(
+                          children: [
+                            Text(
+                              Get.arguments["coinPrice"],
+                              style: TextStyle(
+                                  color: App_Constants_Colors.app_black_color,
+                                  fontFamily:
+                                      App_Fonts_Constants.heading_font_family,
+                                  fontSize: App_Fonts_Constants
+                                      .sub_heading_font_size.sp,
+                                  fontWeight: FontWeight.bold),
+                            ),
+                          ],
+                        ),
+                        SizedBox(
+                          height: heightt * 0.05,
+                        ),
+
+                        Text(
+                          Get.arguments["description"],
+                          style: TextStyle(
+                              color: App_Constants_Colors.app_black_color,
+                              fontFamily:
+                                  App_Fonts_Constants.heading_font_family,
+                              fontSize: App_Fonts_Constants
+                                  .sub_heading_font_size.sp,
+                              fontWeight: FontWeight.bold),
+                        ),
+                        // ReadMoreText(
+                        //   "${Get.arguments["description"]}",
+                        //   trimLines: 5,
+                        //   colorClickableText: Colors.pink,
+                        //   // trimMode: TrimMode.Line,
+                        //   textAlign: TextAlign.justify,
+                        //   trimCollapsedText: 'Show more',
+                        //   trimExpandedText: 'Show less',
+                        //   moreStyle: TextStyle(
+                        //       fontSize: 14, fontWeight: FontWeight.bold),
+                        // ),
+                      ],
+                    ),
+                  ),
+                )
               ],
             ),
           ),
