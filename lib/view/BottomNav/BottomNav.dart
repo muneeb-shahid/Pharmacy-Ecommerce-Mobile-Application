@@ -10,6 +10,7 @@ class BottomNav extends StatelessWidget {
   BottomNav({super.key});
 
   @override
+
   Widget build(BuildContext context) {
     return GetBuilder<BottomNavController>(
         init: BottomNavController(),
@@ -86,4 +87,5 @@ class BottomNav extends StatelessWidget {
               ));
         });
   }
+
 }

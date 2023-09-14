@@ -7,7 +7,9 @@ class HomeProductsItem {
   final String precautions;
   final String sideEffects;
   final String coinPrice;
+  
   final String reviews;
+
 
 
   HomeProductsItem({

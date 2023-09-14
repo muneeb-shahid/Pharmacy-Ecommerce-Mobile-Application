@@ -33,6 +33,8 @@ class Full_Product_Detail_PageController extends GetxController {
                     child: ReadMoreText(
                       Getarguments,
                       style: TextStyle(
+                        letterSpacing: 2,
+                        wordSpacing: 2,
                         color: App_Constants_Colors.app_black_color,
                         fontFamily: App_Fonts_Constants.regular_font_family,
                         fontSize: App_Fonts_Constants.text_font_size.sp,
@@ -64,4 +66,5 @@ class Full_Product_Detail_PageController extends GetxController {
         ),
         backgroundColor: App_Constants_Colors.app_white_color);
   }
+
 }

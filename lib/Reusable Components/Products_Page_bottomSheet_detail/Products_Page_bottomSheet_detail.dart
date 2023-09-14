@@ -26,6 +26,7 @@ ReuseableProductDetails(String appbarName, Getarguments) {
           title: Text(
             appbarName,
             style: TextStyle(
+                
               fontWeight: FontWeight.bold,
               color: App_Constants_Colors.app_blue_color,
               fontFamily: App_Fonts_Constants.heading_font_family,

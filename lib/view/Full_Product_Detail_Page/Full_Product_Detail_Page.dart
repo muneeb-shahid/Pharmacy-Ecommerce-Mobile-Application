@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
@@ -24,6 +22,7 @@ class Full_Product_Detail_Page extends StatelessWidget {
     return Scaffold(
         backgroundColor: App_Constants_Colors.app_background_color,
         appBar: AppBar(
+          elevation: 1,
           backgroundColor: App_Constants_Colors.app_white_color,
           iconTheme: IconThemeData(color: App_Constants_Colors.app_blue_color),
         ),
@@ -148,6 +147,8 @@ class Full_Product_Detail_Page extends StatelessWidget {
                           ReadMoreText(
                             "${Get.arguments["description"]}",
                             style: TextStyle(
+                              letterSpacing: 2,
+                              wordSpacing: 2,
                               color: App_Constants_Colors.app_black_color,
                               fontFamily:
                                   App_Fonts_Constants.regular_font_family,
@@ -191,12 +192,19 @@ class Full_Product_Detail_Page extends StatelessWidget {
                     height: 2,
                     thickness: 2,
                   ),
+                  SizedBox(
+                    height: heightt * 0.01,
+                  ),
+
                 ],
               ),
             ],
           ),
         ),
-        bottomNavigationBar: Container(
+        bottomNavigationBar: 
+        // bottomNavigation()
+
+        Container(
             color: App_Constants_Colors.app_white_color,
             child: Padding(
               padding: const EdgeInsets.all(8.0),
@@ -205,6 +213,7 @@ class Full_Product_Detail_Page extends StatelessWidget {
                   innerColor: App_Constants_Colors.app_blue_color,
                   textColor: App_Constants_Colors.app_white_color,
                   text: "Add to Cart"),
-            )));
+            )),
+        );
   }
 }
