@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:servaid/Model/ImmunityBoosters/Immunity%20Boosters.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:servaid/images/images.dart';
-
-import '../../Model/HomeProductsItem/HomeProductsItem.dart';
 import '../../view/Full_Product_Detail_Page/Full_Product_Detail_Page.dart';
 
 List<ImmunityBoosters> List_of_ImmunityBoosters = [

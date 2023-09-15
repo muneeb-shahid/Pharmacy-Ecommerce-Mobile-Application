@@ -7,7 +7,6 @@ import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:share_plus/share_plus.dart';
 import '../../Reusable Components/BottomNavigation/BottomNavigation.dart';
 import '../../Reusable Components/Products_Page_bottomSheet_detail/Products_Page_bottomSheet_detail.dart';
-import '../../controller/Full_Product_Detail_PageController/Full_Product_Detail_PageController.dart';
 import '../../customButtons/Login&signupButton.dart';
 import '../../images/images.dart';
 

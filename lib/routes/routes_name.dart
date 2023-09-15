@@ -1,14 +1,9 @@
 class RoutesName {
   static String BottomNav = '/';
-  static String Login = "/Login";
-  static String SignUp = "/SignUp";
-  static String EmailVerification = "/EmailVerification";
-  static String ForgetPassword = "/ForgetPassword";
-  static String Note = "/Note";
-  static String Checklist = "/Checklist";
-  static String Folder = "/Folder";
-  static String FullPageNote = "/FullPageNote";
-
-
-  
+  static String Cart = "/Cart";
+  static String Categories = "/Categories";
+  static String Full_Product_Detail_Page = "/Full_Product_Detail_Page";
+  static String Home = "/Home";
+  static String More = "/More";
+  static String Search = "/Search";
 }

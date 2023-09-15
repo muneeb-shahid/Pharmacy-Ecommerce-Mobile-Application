@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
       builder: (context, child) {
         return GetMaterialApp(
           debugShowCheckedModeBanner: false,
-          title: 'Notepad',
+          title: 'Servaid',
           theme: ThemeData(
             textTheme: Typography.englishLike2018.apply(fontSizeFactor: 1.sp),
           ),
