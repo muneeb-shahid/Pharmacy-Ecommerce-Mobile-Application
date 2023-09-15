@@ -12,6 +12,7 @@ class BottomNav extends StatelessWidget {
   @override
 
   Widget build(BuildContext context) {
+  
     return GetBuilder<BottomNavController>(
         init: BottomNavController(),
         builder: (bottomNavController) {
@@ -19,6 +20,7 @@ class BottomNav extends StatelessWidget {
               backgroundColor: App_Constants_Colors.app_blue_color,
               body:
                   bottomNavController.screens[bottomNavController.currentIndex],
+        
               bottomNavigationBar: BottomNavigationBar(
                 elevation: 5,
                 type: BottomNavigationBarType.fixed,
@@ -85,7 +87,9 @@ class BottomNav extends StatelessWidget {
                   ),
                 ],
               ));
+        
         });
+  
   }
 
 }
