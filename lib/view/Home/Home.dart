@@ -41,7 +41,7 @@ class Home extends StatelessWidget {
               ]),
               Positioned(
                   child: Padding(
-                padding: EdgeInsets.only(left: 10, right: 10),
+                padding: const EdgeInsets.only(left: 10, right: 10),
                 child: Form(
                   key: homeController.formKey,
                   child: Material(
@@ -91,8 +91,8 @@ class Home extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(left: 10, right: 10),
-                  child: Container(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  child: SizedBox(
                     height: heightt * 0.2,
                     child: ListView.separated(
                       shrinkWrap: true,
@@ -111,7 +111,7 @@ class Home extends StatelessWidget {
                   height: heightt * 0.03,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 10, right: 10),
+                  padding: const EdgeInsets.only(left: 10, right: 10),
                   child: SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
@@ -163,7 +163,7 @@ class Home extends StatelessWidget {
                             child: Container(
                                 height: heightt * 0.2,
                                 width: widthh * 0.45,
-                                color: Color(0xff26ACA1),
+                                color: const Color(0xff26ACA1),
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: Column(
@@ -207,8 +207,8 @@ class Home extends StatelessWidget {
                   height: heightt * 0.02,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 10, right: 10),
-                  child: Container(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  child: SizedBox(
                     height: heightt * 0.42,
                     width: double.infinity,
                     child: ListView.separated(
@@ -238,8 +238,8 @@ class Home extends StatelessWidget {
                   height: heightt * 0.02,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 10, right: 10),
-                  child: Container(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  child: SizedBox(
                     height: heightt * 0.2,
                     child: ListView.separated(
                       shrinkWrap: true,
@@ -266,8 +266,8 @@ class Home extends StatelessWidget {
                   height: heightt * 0.02,
                 ),
                 Padding(
-                  padding: EdgeInsets.only(left: 10, right: 10),
-                  child: Container(
+                  padding: const EdgeInsets.only(left: 10, right: 10),
+                  child: SizedBox(
                     height: heightt * 0.42,
                     width: double.infinity,
                     child: ListView.separated(

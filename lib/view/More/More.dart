@@ -7,7 +7,7 @@ class More extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("More"),
+        title: const Text("More"),
         centerTitle: true,
       ),
     );

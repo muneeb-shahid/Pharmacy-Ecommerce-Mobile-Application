@@ -7,7 +7,7 @@ import 'package:servaid/controller/bottom_nav_controller/bottom_nav_controller.d
 
 
 class BottomNav extends StatelessWidget {
-  BottomNav({super.key});
+  const BottomNav({super.key});
 
   @override
 

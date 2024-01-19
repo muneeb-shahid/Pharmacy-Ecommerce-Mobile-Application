@@ -189,7 +189,7 @@ Widget buildImmunityBoosters(
               ),
               SizedBox(height: height * 0.05),
               Padding(
-                padding: EdgeInsets.only(left: 120),
+                padding: const EdgeInsets.only(left: 120),
                 child: ClipOval(
                   child: Material(
                     color: App_Constants_Colors.app_blue_color,

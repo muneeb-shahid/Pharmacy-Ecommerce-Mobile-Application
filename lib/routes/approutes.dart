@@ -13,7 +13,7 @@ class AppRoutes {
   static appRoutes() => [
         GetPage(
           name: RoutesName.bottomNav,
-          page: () => BottomNav(),
+          page: () => const BottomNav(),
         ),
         GetPage(
           name: RoutesName.cart,

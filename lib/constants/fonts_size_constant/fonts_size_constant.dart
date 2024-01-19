@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class App_Fonts_Constants {
   static var heading_font_size = 20;

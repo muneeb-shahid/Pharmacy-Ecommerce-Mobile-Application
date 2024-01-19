@@ -42,7 +42,7 @@ bottomNavigation() {
             ),
             BottomNavigationBarItem(
               activeIcon: GestureDetector(
-                  onTap: () => Get.to(Search()),
+                  onTap: () => Get.to(const Search()),
                   child: Column(
                     children: [
                       Icon(
@@ -62,7 +62,7 @@ bottomNavigation() {
             ),
             BottomNavigationBarItem(
               activeIcon: GestureDetector(
-                  onTap: () => Get.to(Cart()),
+                  onTap: () => Get.to(const Cart()),
                   child: Column(
                     children: [
                       Icon(
@@ -82,7 +82,7 @@ bottomNavigation() {
             ),
             BottomNavigationBarItem(
               activeIcon: GestureDetector(
-                onTap: () => Get.to(Categories()),
+                onTap: () => Get.to(const Categories()),
                 child: Column(
                   children: [
                     Icon(
@@ -103,7 +103,7 @@ bottomNavigation() {
             ),
             BottomNavigationBarItem(
               activeIcon: GestureDetector(
-                onTap: () => Get.to(More()),
+                onTap: () => Get.to(const More()),
                 child: Column(
                   children: [
                     Icon(
