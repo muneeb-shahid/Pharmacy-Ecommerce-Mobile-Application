@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
 import 'package:get/get.dart';
-import 'package:servaid/Reusable%20Components/List_of_homeProducts_Item/List_of_homeProducts_Item.dart';
-import 'package:servaid/Reusable%20Components/ShopbyHealthConcerns_items/ShopbyHealthConcerns_items.dart';
+import 'package:servaid/reusable_components/list_of_home_products_item/list_of_home_products_item.dart';
+import 'package:servaid/reusable_components/shop_by_health_concerns_items/shop_by_health_concerns_items.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
-import 'package:servaid/controller/HomeController/HomeController.dart';
+import 'package:servaid/controller/home_Controller/home_Controller.dart';
 
-import '../../Reusable Components/HomeAdCardItem/Homeadcarditem.dart';
-import '../../Reusable Components/HomeCategoryName/HomeCategoryName.dart';
-import '../../Reusable Components/List_of_ImmunityBoosters_Products/List_of_ImmunityBoosters_Products.dart';
+import '../../reusable_components/home_Ad_card_item/home_Ad_card_item.dart';
+import '../../reusable_components/home_category_name/home_category_name.dart';
+import '../../reusable_components/list_of_immunity_boosters_products/list_of_immunity_boosters_products.dart';
 import '../../images/images.dart';
 
 class Home extends StatelessWidget {
@@ -49,7 +49,7 @@ class Home extends StatelessWidget {
                     borderRadius: BorderRadius.circular(30),
                     shadowColor: App_Constants_Colors.app_white_color,
                     child: TextFormField(
-                      controller: homeController.SearchEditingController,
+                      controller: homeController.searchEditingController,
                       focusNode: homeController.focusNode1,
                       onFieldSubmitted: (value) {
                         FocusScope.of(context)
@@ -200,7 +200,7 @@ class Home extends StatelessWidget {
                 SizedBox(
                   height: heightt * 0.03,
                 ),
-                HomeCategoryName(
+                homeCategoryName(
                   "Baby Care",
                 ),
                 SizedBox(
@@ -214,13 +214,13 @@ class Home extends StatelessWidget {
                     child: ListView.separated(
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
-                      itemCount: List_of_homeProducts_Item.length,
+                      itemCount: listOfHomeProductsItem.length,
                       itemBuilder: (context, index) {
                         return buildHomeProductsItem(
                             height: heightt * 0.2,
                             width: widthh * 0.5,
-                            List_of_homeProducts_Item:
-                                List_of_homeProducts_Item[index]);
+                            listOfHomeProductsItem:
+                                listOfHomeProductsItem[index]);
                       },
                       separatorBuilder: (context, index) => SizedBox(
                         width: widthh * 0.02,
@@ -231,7 +231,7 @@ class Home extends StatelessWidget {
                 SizedBox(
                   height: heightt * 0.02,
                 ),
-                HomeCategoryName(
+                homeCategoryName(
                   "Shop by Health Concerns",
                 ),
                 SizedBox(
@@ -247,8 +247,8 @@ class Home extends StatelessWidget {
                       itemCount: adcarditem.length,
                       itemBuilder: (context, index) {
                         return buildShopByHealthCard(
-                            ShopbyHealthConcerns_items:
-                                ShopbyHealthConcerns_items[index]);
+                            shopbyHealthConcernsItems:
+                                shopbyHealthConcernsItems[index]);
                       },
                       separatorBuilder: (context, index) => SizedBox(
                         width: widthh * 0.03,
@@ -259,7 +259,7 @@ class Home extends StatelessWidget {
                 SizedBox(
                   height: heightt * 0.03,
                 ),
-                HomeCategoryName(
+                homeCategoryName(
                   "Immunity Boosters",
                 ),
                 SizedBox(
@@ -273,13 +273,13 @@ class Home extends StatelessWidget {
                     child: ListView.separated(
                       shrinkWrap: true,
                       scrollDirection: Axis.horizontal,
-                      itemCount: List_of_ImmunityBoosters.length,
+                      itemCount: listofImmunityBoosters.length,
                       itemBuilder: (context, index) {
                         return buildImmunityBoosters(
                             height: heightt * 0.2,
                             width: widthh * 0.5,
                             List_of_ImmunityBoosters:
-                                List_of_ImmunityBoosters[index]);
+                                listofImmunityBoosters[index]);
                       },
                       separatorBuilder: (context, index) => SizedBox(
                         width: widthh * 0.02,

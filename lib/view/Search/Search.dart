@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:servaid/constants/colors_constants/colors_constants.dart';
-
-import '../../Reusable Components/BottomNavigation/BottomNavigation.dart';
 
 class Search extends StatelessWidget {
   const Search({super.key});
@@ -10,7 +7,7 @@ class Search extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Search"),
+        title:const Text("Search"),
         centerTitle: true,
       ),
     );

@@ -6,7 +6,7 @@ import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 
 import '../../constants/colors_constants/colors_constants.dart';
 
-class Full_Product_Detail_PageController extends GetxController {
+class FullProductDetailPageController extends GetxController {
   void productsDetailBottomSheet(String appbarName, String Getarguments) {
     Get.bottomSheet(
         SingleChildScrollView(
@@ -22,7 +22,7 @@ class Full_Product_Detail_PageController extends GetxController {
                       onPressed: () {
                         Get.back();
                       },
-                      icon: Icon(Icons.close))
+                      icon: const Icon(Icons.close))
                 ],
               ),
               Padding(
@@ -66,5 +66,4 @@ class Full_Product_Detail_PageController extends GetxController {
         ),
         backgroundColor: App_Constants_Colors.app_white_color);
   }
-
 }

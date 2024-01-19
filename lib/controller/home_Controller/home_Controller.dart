@@ -5,8 +5,8 @@ class HomeController extends GetxController {
   final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   get formKey => _formKey;
 
-  TextEditingController _searchEditingController = TextEditingController();
-  get SearchEditingController => _searchEditingController;
+  final TextEditingController _searchEditingController = TextEditingController();
+  get searchEditingController => _searchEditingController;
   FocusNode focusNode1 = FocusNode();
   FocusNode focusNode2 = FocusNode();
 

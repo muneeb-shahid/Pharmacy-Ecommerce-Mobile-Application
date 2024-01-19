@@ -1,12 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:servaid/view/Cart/Cart.dart';
-import 'package:servaid/view/Full_Product_Detail_Page/Full_Product_Detail_Page.dart';
-
-import '../../view/Categories/Categories.dart';
+import '../../view/categories/categories.dart';
 import '../../view/Home/Home.dart';
-import '../../view/More/More.dart';
-import '../../view/Search/Search.dart';
+import '../../view/more/more.dart';
+import '../../view/search/search.dart';
 
 class BottomNavController extends GetxController {
   int currentIndex = 0;

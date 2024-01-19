@@ -8,7 +8,7 @@ var mediaQueryData = Get.mediaQuery;
 double screenHeight = mediaQueryData.size.height * 1;
 double screenWidth = mediaQueryData.size.width * 1;
 
-customLogin_SignupButton(
+customLoginSignupButton(
     {required func,
     required innerColor,
     required var textColor,

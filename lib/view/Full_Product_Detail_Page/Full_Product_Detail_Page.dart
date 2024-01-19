@@ -5,17 +5,16 @@ import 'package:readmore/readmore.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:share_plus/share_plus.dart';
-import '../../Reusable Components/BottomNavigation/BottomNavigation.dart';
-import '../../Reusable Components/Products_Page_bottomSheet_detail/Products_Page_bottomSheet_detail.dart';
-import '../../customButtons/Login&signupButton.dart';
+import '../../reusable_components/bottom_navigation/bottom_navigation.dart';
+import '../../reusable_components/products_page_bottom_sheet_detail/products_page_bottom_sheet_detail.dart';
+import '../../custom_Buttons/login_and_signup_button.dart';
 import '../../images/images.dart';
 
-class Full_Product_Detail_Page extends StatelessWidget {
-  const Full_Product_Detail_Page({super.key});
+class FullProductDetailPage extends StatelessWidget {
+  const FullProductDetailPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-   
     var heightt = MediaQuery.of(context).size.height * 1;
     var widthh = MediaQuery.of(context).size.width * 1;
     return Scaffold(
@@ -89,7 +88,7 @@ class Full_Product_Detail_Page extends StatelessWidget {
                                     onPressed: () async {
                                       await Share.share(Get.arguments["title"]);
                                     },
-                                    icon: Icon(Icons.share))
+                                    icon: const Icon(Icons.share))
                               ],
                             )
                           ],
@@ -191,13 +190,12 @@ class Full_Product_Detail_Page extends StatelessWidget {
                       SizedBox(
                         height: heightt * 0.03,
                       ),
-                      ReuseableProductDetails(
+                      reuseableProductDetails(
                           "Precautions", Get.arguments["precautions"]),
-                      ReuseableProductDetails(
+                      reuseableProductDetails(
                           "Side Effects", Get.arguments["sideEffects"]),
-                      ReuseableProductDetails(
+                      reuseableProductDetails(
                           "Reviews", Get.arguments["reviews"]),
-                         
                       Divider(
                         color: App_Constants_Colors.app_white_color,
                         height: 2,
@@ -217,7 +215,7 @@ class Full_Product_Detail_Page extends StatelessWidget {
               width: widthh * 1,
               bottom: 0,
               child: ClipRRect(
-                borderRadius: BorderRadius.only(
+                borderRadius: const BorderRadius.only(
                   topLeft: Radius.circular(15.0),
                   topRight: Radius.circular(15.0),
                 ),
@@ -225,7 +223,7 @@ class Full_Product_Detail_Page extends StatelessWidget {
                     color: App_Constants_Colors.app_white_color,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
-                      child: customLogin_SignupButton(
+                      child: customLoginSignupButton(
                           func: () => Get.to(""),
                           innerColor: App_Constants_Colors.app_blue_color,
                           textColor: App_Constants_Colors.app_white_color,

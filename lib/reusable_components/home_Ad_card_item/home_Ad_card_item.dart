@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../Model/AdCardItem/AdCardItem.dart';
+import '../../model/ad_card_Item/ad_card_Item.dart';
 import '../../images/images.dart';
 
 List<AdCardItem> adcarditem = [

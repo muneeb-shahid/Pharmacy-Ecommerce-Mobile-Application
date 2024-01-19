@@ -1,9 +1,9 @@
 class RoutesName {
-  static String BottomNav = '/';
-  static String Cart = "/Cart";
-  static String Categories = "/Categories";
-  static String Full_Product_Detail_Page = "/Full_Product_Detail_Page";
-  static String Home = "/Home";
-  static String More = "/More";
-  static String Search = "/Search";
+  static String bottomNav = '/';
+  static String cart = "/cart";
+  static String categories = "/categories";
+  static String fullProductDetailPage = "/fullProductDetailPage";
+  static String home = "/home";
+  static String more = "/more";
+  static String search = "/search";
 }

@@ -1,40 +1,40 @@
 import 'package:get/get.dart';
 import 'package:servaid/routes/routes_name.dart';
-import 'package:servaid/view/BottomNav/BottomNav.dart';
 import 'package:servaid/view/Home/Home.dart';
+import 'package:servaid/view/bottom_nav/bottom_nav.dart';
+import 'package:servaid/view/full_product_detail_page/full_product_detail_page.dart';
 
 import '../view/Cart/Cart.dart';
 import '../view/Categories/Categories.dart';
-import '../view/Full_Product_Detail_Page/Full_Product_Detail_Page.dart';
 import '../view/More/More.dart';
 import '../view/Search/Search.dart';
 
 class AppRoutes {
   static appRoutes() => [
         GetPage(
-          name: RoutesName.BottomNav,
+          name: RoutesName.bottomNav,
           page: () => BottomNav(),
         ),
         GetPage(
-          name: RoutesName.Cart,
-          page: () => Cart(),
+          name: RoutesName.cart,
+          page: () => const Cart(),
         ),
-        GetPage(name: RoutesName.Categories, page: () => Categories()),
+        GetPage(name: RoutesName.categories, page: () => const Categories()),
         GetPage(
-          name: RoutesName.Full_Product_Detail_Page,
-          page: () => Full_Product_Detail_Page(),
-        ),
-        GetPage(
-          name: RoutesName.Home,
-          page: () => Home(),
+          name: RoutesName.fullProductDetailPage,
+          page: () =>const FullProductDetailPage(),
         ),
         GetPage(
-          name: RoutesName.More,
-          page: () => More(),
+          name: RoutesName.home,
+          page: () => const Home(),
         ),
         GetPage(
-          name: RoutesName.Search,
-          page: () => Search(),
+          name: RoutesName.more,
+          page: () => const More(),
+        ),
+        GetPage(
+          name: RoutesName.search,
+          page: () => const Search(),
         ),
       ];
 }

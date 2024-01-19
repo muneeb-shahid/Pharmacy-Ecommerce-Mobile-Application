@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:servaid/Model/ImmunityBoosters/Immunity%20Boosters.dart';
+import 'package:servaid/model/immunity_boosters/immunity_boosters.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:servaid/images/images.dart';
-import '../../view/Full_Product_Detail_Page/Full_Product_Detail_Page.dart';
+import '../../view/full_product_detail_page/full_product_detail_page.dart';
 
-List<ImmunityBoosters> List_of_ImmunityBoosters = [
+List<ImmunityBoosters> listofImmunityBoosters = [
   ImmunityBoosters(
       image: App_Images.immunity_Boosters_1,
       title: "Blackmores Cod Liver Oil 1000MG Cap 1x80 (P)",
@@ -82,7 +82,7 @@ Widget buildImmunityBoosters(
         {height, width, required ImmunityBoosters List_of_ImmunityBoosters}) =>
     GestureDetector(
       onTap: () {
-        Get.to(Full_Product_Detail_Page(), arguments: {
+        Get.to(() => const FullProductDetailPage(), arguments: {
           "image": List_of_ImmunityBoosters.image,
           "title": List_of_ImmunityBoosters.title,
           "companyName": List_of_ImmunityBoosters.companyName,

@@ -3,8 +3,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
+import 'package:servaid/controller/bottom_nav_controller/bottom_nav_controller.dart';
 
-import '../../controller/BottomNavController/BottomNavController.dart';
 
 class BottomNav extends StatelessWidget {
   BottomNav({super.key});

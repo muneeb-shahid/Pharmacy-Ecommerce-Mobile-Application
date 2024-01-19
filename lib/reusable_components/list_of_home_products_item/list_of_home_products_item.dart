@@ -4,10 +4,10 @@ import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:servaid/images/images.dart';
 
-import '../../Model/HomeProductsItem/HomeProductsItem.dart';
-import '../../view/Full_Product_Detail_Page/Full_Product_Detail_Page.dart';
+import '../../model/home_products_item/home_products_item.dart';
+import '../../view/full_product_detail_page/full_product_detail_page.dart';
 
-List<HomeProductsItem> List_of_homeProducts_Item = [
+List<HomeProductsItem> listOfHomeProductsItem = [
   HomeProductsItem(
       image: App_Images.babyCare1,
       title: "Ensure Chocolate 400G Energy Powder",
@@ -119,19 +119,19 @@ As PediaSure is fully nutrition. Therefore, after its intake child may not need 
 ];
 
 Widget buildHomeProductsItem(
-        {required HomeProductsItem List_of_homeProducts_Item, height, width}) =>
+        {required HomeProductsItem listOfHomeProductsItem, height, width}) =>
     GestureDetector(
       onTap: () {
-        Get.to(Full_Product_Detail_Page(), arguments: {
-          "image": List_of_homeProducts_Item.image,
-          "title": List_of_homeProducts_Item.title,
-          "companyName": List_of_homeProducts_Item.companyName,
-          "price": List_of_homeProducts_Item.price,
-          "description": List_of_homeProducts_Item.description,
-          "precautions": List_of_homeProducts_Item.precautions,
-          "sideEffects": List_of_homeProducts_Item.sideEffects,
-          "coinPrice": List_of_homeProducts_Item.coinPrice,
-          "reviews:": List_of_homeProducts_Item.reviews,
+        Get.to(() => const FullProductDetailPage(), arguments: {
+          "image": listOfHomeProductsItem.image,
+          "title": listOfHomeProductsItem.title,
+          "companyName": listOfHomeProductsItem.companyName,
+          "price": listOfHomeProductsItem.price,
+          "description": listOfHomeProductsItem.description,
+          "precautions": listOfHomeProductsItem.precautions,
+          "sideEffects": listOfHomeProductsItem.sideEffects,
+          "coinPrice": listOfHomeProductsItem.coinPrice,
+          "reviews:": listOfHomeProductsItem.reviews,
         });
       },
       child: ClipRRect(
@@ -140,7 +140,7 @@ Widget buildHomeProductsItem(
           child: Column(
             children: [
               Padding(
-                padding: EdgeInsets.only(right: 60, top: 10),
+                padding: const EdgeInsets.only(right: 60, top: 10),
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(40),
                   child: Container(
@@ -157,7 +157,7 @@ Widget buildHomeProductsItem(
                           width: width * 0.05,
                         ),
                         Text(
-                          List_of_homeProducts_Item.price,
+                          listOfHomeProductsItem.price,
                           style: TextStyle(
                               color: App_Constants_Colors.app_black_color,
                               fontFamily:
@@ -170,7 +170,7 @@ Widget buildHomeProductsItem(
                 ),
               ),
               Image.asset(
-                List_of_homeProducts_Item.image,
+                listOfHomeProductsItem.image,
                 height: height,
                 width: width,
               ),
@@ -181,7 +181,7 @@ Widget buildHomeProductsItem(
                 child: Padding(
                   padding: const EdgeInsets.only(left: 10, right: 10),
                   child: Text(
-                    List_of_homeProducts_Item.title,
+                    listOfHomeProductsItem.title,
                     overflow: TextOverflow.ellipsis,
                     textAlign: TextAlign.center,
                     maxLines: 2,
@@ -193,7 +193,7 @@ Widget buildHomeProductsItem(
               ),
               SizedBox(height: height * 0.05),
               Text(
-                List_of_homeProducts_Item.price,
+                listOfHomeProductsItem.price,
                 style: TextStyle(
                     color: App_Constants_Colors.app_blue_color,
                     fontFamily: App_Fonts_Constants.regular_font_family,
@@ -201,7 +201,7 @@ Widget buildHomeProductsItem(
               ),
               SizedBox(height: height * 0.05),
               Padding(
-                padding: EdgeInsets.only(left: 120),
+                padding: const EdgeInsets.only(left: 120),
                 child: ClipOval(
                   child: Material(
                     color: App_Constants_Colors.app_blue_color,

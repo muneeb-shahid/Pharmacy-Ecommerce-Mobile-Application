@@ -7,7 +7,7 @@ class Categories extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Categories"),
+        title: const Text("Categories"),
         centerTitle: true,
       ),
     );

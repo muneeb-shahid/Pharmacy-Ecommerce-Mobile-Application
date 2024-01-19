@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:servaid/view/Cart/Cart.dart';
-import 'package:servaid/view/Categories/Categories.dart';
-import 'package:servaid/view/More/More.dart';
-import 'package:servaid/view/Search/Search.dart';
+import 'package:servaid/view/categories/categories.dart';
+import 'package:servaid/view/more/more.dart';
+import 'package:servaid/view/search/search.dart';
 
 import '../../constants/colors_constants/colors_constants.dart';
 import '../../constants/fonts_size_constant/fonts_size_constant.dart';
-import '../../controller/BottomNavController/BottomNavController.dart';
+import '../../controller/bottom_nav_controller/bottom_nav_controller.dart';
 
 var mediaQueryData = Get.mediaQuery;
 double screenHeight = mediaQueryData.size.height * 1;
