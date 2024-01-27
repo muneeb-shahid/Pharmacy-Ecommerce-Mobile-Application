@@ -4,7 +4,7 @@ import 'package:servaid/model/immunity_boosters/immunity_boosters.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:servaid/images/images.dart';
-import '../../view/full_product_detail_page/full_product_detail_page.dart';
+import 'package:servaid/view/full_product_detail_page_view/full_product_detail_page_view.dart';
 
 List<ImmunityBoosters> listofImmunityBoosters = [
   ImmunityBoosters(

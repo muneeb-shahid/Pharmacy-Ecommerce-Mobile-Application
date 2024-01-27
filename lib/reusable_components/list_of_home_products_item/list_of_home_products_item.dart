@@ -3,9 +3,10 @@ import 'package:get/get.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
 import 'package:servaid/images/images.dart';
+import 'package:servaid/view/full_product_detail_page_view/full_product_detail_page_view.dart';
 
 import '../../model/home_products_item/home_products_item.dart';
-import '../../view/full_product_detail_page/full_product_detail_page.dart';
+
 
 List<HomeProductsItem> listOfHomeProductsItem = [
   HomeProductsItem(

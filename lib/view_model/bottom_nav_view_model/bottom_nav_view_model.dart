@@ -1,9 +1,10 @@
 import 'package:get/get.dart';
 import 'package:servaid/view/cart_view/cart_view.dart';
-import '../../view/categories/categories.dart';
+import 'package:servaid/view/categories_view/Categories.dart';
+import 'package:servaid/view/more_view/more_view.dart';
+import 'package:servaid/view/search_view/search_view.dart';
 import '../../view/home_view/home_view.dart';
-import '../../view/more/more.dart';
-import '../../view/search/search.dart';
+
 
 class BottomNavController extends GetxController {
   int currentIndex = 0;

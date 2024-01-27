@@ -2,9 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 import 'package:servaid/view/cart_view/cart_view.dart';
-import 'package:servaid/view/categories/categories.dart';
-import 'package:servaid/view/more/more.dart';
-import 'package:servaid/view/search/search.dart';
+
+import 'package:servaid/view/categories_view/Categories.dart';
+
+import 'package:servaid/view/more_view/more_view.dart';
+
+import 'package:servaid/view/search_view/search_view.dart';
 
 import '../../constants/colors_constants/colors_constants.dart';
 import '../../constants/fonts_size_constant/fonts_size_constant.dart';
