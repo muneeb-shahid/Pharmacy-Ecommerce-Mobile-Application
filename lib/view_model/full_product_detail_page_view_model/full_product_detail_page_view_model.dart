@@ -13,7 +13,7 @@ class FullProductDetailPageController extends GetxController {
           child: Column(
             children: [
               AppBar(
-                backgroundColor: App_Constants_Colors.app_blue_color,
+                backgroundColor: AppColors.appBlueColor,
                 elevation: 0,
                 centerTitle: true,
                 title: Text(appbarName),
@@ -28,34 +28,34 @@ class FullProductDetailPageController extends GetxController {
               Padding(
                 padding: const EdgeInsets.all(10),
                 child: Container(
-                  color: App_Constants_Colors.app_white_color,
+                  color: AppColors.appWhiteColor,
                   child: SingleChildScrollView(
                     child: ReadMoreText(
                       Getarguments,
                       style: TextStyle(
                         letterSpacing: 2,
                         wordSpacing: 2,
-                        color: App_Constants_Colors.app_black_color,
-                        fontFamily: App_Fonts_Constants.regular_font_family,
-                        fontSize: App_Fonts_Constants.text_font_size.sp,
+                        color: AppColors.appBlackColor,
+                        fontFamily: AppFontsConstants.regularFontFamily,
+                        fontSize: AppFontsConstants.textFontSize.sp,
                       ),
                       trimLines: 5,
                       lessStyle: TextStyle(
-                        color: App_Constants_Colors.app_blue_color,
+                        color: AppColors.appBlueColor,
                         decoration: TextDecoration.underline,
                         fontWeight: FontWeight.bold,
-                        fontFamily: App_Fonts_Constants.regular_font_family,
-                        fontSize: App_Fonts_Constants.text_font_size.sp,
+                        fontFamily: AppFontsConstants.regularFontFamily,
+                        fontSize: AppFontsConstants.textFontSize.sp,
                       ),
                       trimMode: TrimMode.Line,
                       trimCollapsedText: 'Read more',
                       trimExpandedText: 'Read less',
                       moreStyle: TextStyle(
-                        color: App_Constants_Colors.app_blue_color,
+                        color: AppColors.appBlueColor,
                         decoration: TextDecoration.underline,
                         fontWeight: FontWeight.bold,
-                        fontFamily: App_Fonts_Constants.regular_font_family,
-                        fontSize: App_Fonts_Constants.text_font_size.sp,
+                        fontFamily: AppFontsConstants.regularFontFamily,
+                        fontSize: AppFontsConstants.textFontSize.sp,
                       ),
                     ),
                   ),
@@ -64,6 +64,6 @@ class FullProductDetailPageController extends GetxController {
             ],
           ),
         ),
-        backgroundColor: App_Constants_Colors.app_white_color);
+        backgroundColor: AppColors.appWhiteColor);
   }
 }

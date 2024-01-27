@@ -18,11 +18,11 @@ class FullProductDetailPage extends StatelessWidget {
     var heightt = MediaQuery.of(context).size.height * 1;
     var widthh = MediaQuery.of(context).size.width * 1;
     return Scaffold(
-        backgroundColor: App_Constants_Colors.app_background_color,
+        backgroundColor: AppColors.appBackgroundColor,
         appBar: AppBar(
           elevation: 1,
-          backgroundColor: App_Constants_Colors.app_white_color,
-          iconTheme: IconThemeData(color: App_Constants_Colors.app_blue_color),
+          backgroundColor: AppColors.appWhiteColor,
+          iconTheme: IconThemeData(color: AppColors.appBlueColor),
         ),
         body: Stack(
           children: [
@@ -61,10 +61,9 @@ class FullProductDetailPage extends StatelessWidget {
                                       Text(
                                         "${Get.arguments['price']}",
                                         style: TextStyle(
-                                            color: App_Constants_Colors
-                                                .app_black_color,
-                                            fontFamily: App_Fonts_Constants
-                                                .regular_font_family,
+                                            color: AppColors.appBlackColor,
+                                            fontFamily: AppFontsConstants
+                                                .regularFontFamily,
                                             fontWeight: FontWeight.bold),
                                       ),
                                     ],
@@ -95,7 +94,7 @@ class FullProductDetailPage extends StatelessWidget {
                         ),
                       ),
                       Container(
-                        color: App_Constants_Colors.app_background_color,
+                        color: AppColors.appBackgroundColor,
                         child: Padding(
                           padding: const EdgeInsets.only(left: 20, right: 20),
                           child: Column(
@@ -106,11 +105,11 @@ class FullProductDetailPage extends StatelessWidget {
                               Text(
                                 Get.arguments["title"],
                                 style: TextStyle(
-                                    color: App_Constants_Colors.app_blue_color,
+                                    color: AppColors.appBlueColor,
                                     fontFamily:
-                                        App_Fonts_Constants.heading_font_family,
-                                    fontSize: App_Fonts_Constants
-                                        .sub_heading_font_size.sp,
+                                        AppFontsConstants.headingFontFamily,
+                                    fontSize:
+                                        AppFontsConstants.subHeadingFontSize.sp,
                                     fontWeight: FontWeight.bold),
                               ),
                               SizedBox(
@@ -121,12 +120,11 @@ class FullProductDetailPage extends StatelessWidget {
                                   Text(
                                     Get.arguments["companyName"],
                                     style: TextStyle(
-                                      color:
-                                          App_Constants_Colors.app_black_color,
-                                      fontFamily: App_Fonts_Constants
-                                          .heading_font_family,
+                                      color: AppColors.appBlackColor,
+                                      fontFamily:
+                                          AppFontsConstants.headingFontFamily,
                                       fontSize:
-                                          App_Fonts_Constants.text_font_size.sp,
+                                          AppFontsConstants.textFontSize.sp,
                                     ),
                                   ),
                                 ],
@@ -136,12 +134,11 @@ class FullProductDetailPage extends StatelessWidget {
                                   Text(
                                     Get.arguments["coinPrice"],
                                     style: TextStyle(
-                                        color: App_Constants_Colors
-                                            .app_black_color,
-                                        fontFamily: App_Fonts_Constants
-                                            .heading_font_family,
-                                        fontSize: App_Fonts_Constants
-                                            .sub_heading_font_size.sp,
+                                        color: AppColors.appBlackColor,
+                                        fontFamily:
+                                            AppFontsConstants.headingFontFamily,
+                                        fontSize: AppFontsConstants
+                                            .subHeadingFontSize.sp,
                                         fontWeight: FontWeight.bold),
                                   ),
                                 ],
@@ -154,33 +151,30 @@ class FullProductDetailPage extends StatelessWidget {
                                 style: TextStyle(
                                   letterSpacing: 2,
                                   wordSpacing: 2,
-                                  color: App_Constants_Colors.app_black_color,
+                                  color: AppColors.appBlackColor,
                                   fontFamily:
-                                      App_Fonts_Constants.regular_font_family,
-                                  fontSize:
-                                      App_Fonts_Constants.text_font_size.sp,
+                                      AppFontsConstants.regularFontFamily,
+                                  fontSize: AppFontsConstants.textFontSize.sp,
                                 ),
                                 trimLines: 5,
                                 lessStyle: TextStyle(
-                                  color: App_Constants_Colors.app_blue_color,
+                                  color: AppColors.appBlueColor,
                                   decoration: TextDecoration.underline,
                                   fontWeight: FontWeight.bold,
                                   fontFamily:
-                                      App_Fonts_Constants.regular_font_family,
-                                  fontSize:
-                                      App_Fonts_Constants.text_font_size.sp,
+                                      AppFontsConstants.regularFontFamily,
+                                  fontSize: AppFontsConstants.textFontSize.sp,
                                 ),
                                 trimMode: TrimMode.Line,
                                 trimCollapsedText: 'Read more',
                                 trimExpandedText: 'Read less',
                                 moreStyle: TextStyle(
-                                  color: App_Constants_Colors.app_blue_color,
+                                  color: AppColors.appBlueColor,
                                   decoration: TextDecoration.underline,
                                   fontWeight: FontWeight.bold,
                                   fontFamily:
-                                      App_Fonts_Constants.regular_font_family,
-                                  fontSize:
-                                      App_Fonts_Constants.text_font_size.sp,
+                                      AppFontsConstants.regularFontFamily,
+                                  fontSize: AppFontsConstants.textFontSize.sp,
                                 ),
                               ),
                             ],
@@ -197,7 +191,7 @@ class FullProductDetailPage extends StatelessWidget {
                       reuseableProductDetails(
                           "Reviews", Get.arguments["reviews"]),
                       Divider(
-                        color: App_Constants_Colors.app_white_color,
+                        color: AppColors.appWhiteColor,
                         height: 2,
                         thickness: 2,
                       ),
@@ -220,13 +214,13 @@ class FullProductDetailPage extends StatelessWidget {
                   topRight: Radius.circular(15.0),
                 ),
                 child: Container(
-                    color: App_Constants_Colors.app_white_color,
+                    color: AppColors.appWhiteColor,
                     child: Padding(
                       padding: const EdgeInsets.all(8.0),
                       child: customLoginSignupButton(
                           func: () => Get.to(""),
-                          innerColor: App_Constants_Colors.app_blue_color,
-                          textColor: App_Constants_Colors.app_white_color,
+                          innerColor: AppColors.appBlueColor,
+                          textColor: AppColors.appWhiteColor,
                           text: "Add to Cart"),
                     )),
               ),

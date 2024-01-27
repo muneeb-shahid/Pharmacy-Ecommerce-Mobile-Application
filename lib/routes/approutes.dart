@@ -1,13 +1,13 @@
 import 'package:get/get.dart';
 import 'package:servaid/routes/routes_name.dart';
-import 'package:servaid/view/Home/Home.dart';
-import 'package:servaid/view/bottom_nav/bottom_nav.dart';
+import 'package:servaid/view/bottom_nav_view/bottom_nav_view.dart';
+import 'package:servaid/view/cart_view/cart_view.dart';
+import 'package:servaid/view/categories/categories.dart';
 import 'package:servaid/view/full_product_detail_page/full_product_detail_page.dart';
+import 'package:servaid/view/more_view/more_view.dart';
 
-import '../view/Cart/Cart.dart';
-import '../view/Categories/Categories.dart';
-import '../view/More/More.dart';
-import '../view/Search/Search.dart';
+import '../view/home_view/home_view.dart';
+import '../view/search/search.dart';
 
 class AppRoutes {
   static appRoutes() => [

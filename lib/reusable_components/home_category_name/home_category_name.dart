@@ -14,9 +14,9 @@ homeCategoryName(
         Text(
           homeCategoryName,
           style: TextStyle(
-              color: App_Constants_Colors.app_blue_color,
-              fontSize: App_Fonts_Constants.sub_heading_font_size.sp,
-              fontFamily: App_Fonts_Constants.heading_font_family,
+              color: AppColors.appBlueColor,
+              fontSize: AppFontsConstants.subHeadingFontSize.sp,
+              fontFamily: AppFontsConstants.headingFontFamily,
               fontWeight: FontWeight.bold),
         ),
       ],

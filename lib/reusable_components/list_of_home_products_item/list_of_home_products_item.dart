@@ -159,9 +159,9 @@ Widget buildHomeProductsItem(
                         Text(
                           listOfHomeProductsItem.price,
                           style: TextStyle(
-                              color: App_Constants_Colors.app_black_color,
+                              color: AppColors.appBlackColor,
                               fontFamily:
-                                  App_Fonts_Constants.regular_font_family,
+                                  AppFontsConstants.regularFontFamily,
                               fontWeight: FontWeight.bold),
                         ),
                       ],
@@ -187,7 +187,7 @@ Widget buildHomeProductsItem(
                     maxLines: 2,
                     softWrap: false,
                     style:
-                        TextStyle(color: App_Constants_Colors.app_black_color),
+                        TextStyle(color: AppColors.appBlackColor),
                   ),
                 ),
               ),
@@ -195,8 +195,8 @@ Widget buildHomeProductsItem(
               Text(
                 listOfHomeProductsItem.price,
                 style: TextStyle(
-                    color: App_Constants_Colors.app_blue_color,
-                    fontFamily: App_Fonts_Constants.regular_font_family,
+                    color: AppColors.appBlueColor,
+                    fontFamily: AppFontsConstants.regularFontFamily,
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(height: height * 0.05),
@@ -204,7 +204,7 @@ Widget buildHomeProductsItem(
                 padding: const EdgeInsets.only(left: 120),
                 child: ClipOval(
                   child: Material(
-                    color: App_Constants_Colors.app_blue_color,
+                    color: AppColors.appBlueColor,
                     child: InkWell(
                       onTap: () {},
                       child: Column(
@@ -213,7 +213,7 @@ Widget buildHomeProductsItem(
                               onPressed: () {},
                               icon: Icon(
                                 Icons.add,
-                                color: App_Constants_Colors.app_white_color,
+                                color: AppColors.appWhiteColor,
                               ))
                         ],
                       ),

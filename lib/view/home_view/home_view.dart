@@ -5,7 +5,7 @@ import 'package:servaid/reusable_components/list_of_home_products_item/list_of_h
 import 'package:servaid/reusable_components/shop_by_health_concerns_items/shop_by_health_concerns_items.dart';
 import 'package:servaid/constants/colors_constants/colors_constants.dart';
 import 'package:servaid/constants/fonts_size_constant/fonts_size_constant.dart';
-import 'package:servaid/controller/home_Controller/home_Controller.dart';
+import 'package:servaid/view_model/home_view_model/home_view_model.dart';
 
 import '../../reusable_components/home_Ad_card_item/home_Ad_card_item.dart';
 import '../../reusable_components/home_category_name/home_category_name.dart';
@@ -21,7 +21,7 @@ class Home extends StatelessWidget {
     var heightt = MediaQuery.of(context).size.height * 1;
     var widthh = MediaQuery.of(context).size.width * 1;
     return Scaffold(
-      backgroundColor: App_Constants_Colors.app_background_color,
+      backgroundColor: AppColors.appBackgroundColor,
       body: Column(
         children: [
           Stack(
@@ -34,7 +34,7 @@ class Home extends StatelessWidget {
                     alignment: Alignment.topLeft,
                     height: heightt * 0.18,
                     width: widthh * 1,
-                    color: App_Constants_Colors.app_blue_color,
+                    color: AppColors.appBlueColor,
                     child: Image(image: AssetImage(App_Images.app_logo)),
                   ),
                 ),
@@ -47,7 +47,7 @@ class Home extends StatelessWidget {
                   child: Material(
                     elevation: 20.0,
                     borderRadius: BorderRadius.circular(30),
-                    shadowColor: App_Constants_Colors.app_white_color,
+                    shadowColor: AppColors.appWhiteColor,
                     child: TextFormField(
                       controller: homeController.searchEditingController,
                       focusNode: homeController.focusNode1,
@@ -55,14 +55,12 @@ class Home extends StatelessWidget {
                         FocusScope.of(context)
                             .requestFocus(homeController.focusNode2);
                       },
-                      style: TextStyle(
-                          color: App_Constants_Colors.app_black_color),
+                      style: TextStyle(color: AppColors.appBlackColor),
                       decoration: InputDecoration(
                         filled: true,
-                        fillColor: App_Constants_Colors.app_white_color,
+                        fillColor: AppColors.appWhiteColor,
                         hintText: 'Search Products Here',
-                        hintStyle: TextStyle(
-                            color: App_Constants_Colors.app_blue_color),
+                        hintStyle: TextStyle(color: AppColors.appBlueColor),
                         focusedBorder: OutlineInputBorder(
                           borderRadius: BorderRadius.circular(30),
                           borderSide: const BorderSide(
@@ -72,10 +70,10 @@ class Home extends StatelessWidget {
                         ),
                         enabledBorder: OutlineInputBorder(
                             borderRadius: BorderRadius.circular(30),
-                            borderSide: BorderSide(
-                                color: App_Constants_Colors.app_white_color)),
-                        prefixIcon: Icon(Icons.search,
-                            color: App_Constants_Colors.app_blue_color),
+                            borderSide:
+                                BorderSide(color: AppColors.appWhiteColor)),
+                        prefixIcon:
+                            Icon(Icons.search, color: AppColors.appBlueColor),
                       ),
                     ),
                   ),
@@ -123,7 +121,7 @@ class Home extends StatelessWidget {
                             child: Container(
                                 height: heightt * 0.2,
                                 width: widthh * 0.45,
-                                color: App_Constants_Colors.app_pink_color,
+                                color: AppColors.appPinkColor,
                                 child: Padding(
                                   padding: const EdgeInsets.all(12.0),
                                   child: Column(
@@ -131,10 +129,9 @@ class Home extends StatelessWidget {
                                       Text(
                                         "Place your order istantly within seconds.",
                                         style: TextStyle(
-                                            color: App_Constants_Colors
-                                                .app_white_color,
-                                            fontFamily: App_Fonts_Constants
-                                                .regular_font_family),
+                                            color: AppColors.appWhiteColor,
+                                            fontFamily: AppFontsConstants
+                                                .regularFontFamily),
                                       ),
                                       SizedBox(
                                         height: heightt * 0.02,
@@ -142,8 +139,7 @@ class Home extends StatelessWidget {
                                       ListTile(
                                           leading: Icon(
                                             Icons.arrow_forward_ios_outlined,
-                                            color: App_Constants_Colors
-                                                .app_white_color,
+                                            color: AppColors.appWhiteColor,
                                           ),
                                           trailing: Image.asset(
                                             App_Images.clock,
@@ -171,10 +167,9 @@ class Home extends StatelessWidget {
                                       Text(
                                         "Got a prescription?\nUpload and get your meds now!.",
                                         style: TextStyle(
-                                            color: App_Constants_Colors
-                                                .app_white_color,
-                                            fontFamily: App_Fonts_Constants
-                                                .regular_font_family),
+                                            color: AppColors.appWhiteColor,
+                                            fontFamily: AppFontsConstants
+                                                .regularFontFamily),
                                       ),
                                       SizedBox(
                                         height: heightt * 0.02,
@@ -182,8 +177,7 @@ class Home extends StatelessWidget {
                                       ListTile(
                                           leading: Icon(
                                             Icons.arrow_forward_ios_outlined,
-                                            color: App_Constants_Colors
-                                                .app_white_color,
+                                            color: AppColors.appWhiteColor,
                                           ),
                                           trailing: Image.asset(
                                             App_Images.notes,

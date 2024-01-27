@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
-import 'package:servaid/view/Cart/Cart.dart';
+import 'package:servaid/view/cart_view/cart_view.dart';
 import 'package:servaid/view/categories/categories.dart';
 import 'package:servaid/view/more/more.dart';
 import 'package:servaid/view/search/search.dart';
 
 import '../../constants/colors_constants/colors_constants.dart';
 import '../../constants/fonts_size_constant/fonts_size_constant.dart';
-import '../../controller/bottom_nav_controller/bottom_nav_controller.dart';
+import '../../view_model/bottom_nav_view_model/bottom_nav_view_model.dart';
 
 var mediaQueryData = Get.mediaQuery;
 double screenHeight = mediaQueryData.size.height * 1;
@@ -19,24 +19,24 @@ bottomNavigation() {
       init: BottomNavController(),
       builder: (bottomNavController) {
         bottomNavController.screens[bottomNavController.currentIndex];
-        App_Constants_Colors.app_blue_color;
+        AppColors.appBlueColor;
         return BottomNavigationBar(
           elevation: 5,
           type: BottomNavigationBarType.fixed,
-          backgroundColor: App_Constants_Colors.app_white_color,
-          selectedItemColor: App_Constants_Colors.app_blue_color,
-          selectedFontSize: App_Fonts_Constants.text_font_size.sp,
+          backgroundColor: AppColors.appWhiteColor,
+          selectedItemColor: AppColors.appBlueColor,
+          selectedFontSize: AppFontsConstants.textFontSize.sp,
           currentIndex: bottomNavController.currentIndex,
           onTap: bottomNavController.changeIndex,
           items: [
             BottomNavigationBarItem(
               activeIcon: Icon(
                 Icons.home,
-                color: App_Constants_Colors.app_blue_color,
+                color: AppColors.appBlueColor,
               ),
               icon: Icon(
                 Icons.home,
-                color: App_Constants_Colors.app_grey_color,
+                color: AppColors.appGreyColor,
               ),
               label: "Home",
             ),
@@ -47,7 +47,7 @@ bottomNavigation() {
                     children: [
                       Icon(
                         Icons.search,
-                        color: App_Constants_Colors.app_blue_color,
+                        color: AppColors.appBlueColor,
                       ),
                       SizedBox(
                         height: screenHeight * 0.001,
@@ -57,7 +57,7 @@ bottomNavigation() {
               label: "Search",
               icon: Icon(
                 Icons.search,
-                color: App_Constants_Colors.app_grey_color,
+                color: AppColors.appGreyColor,
               ),
             ),
             BottomNavigationBarItem(
@@ -67,7 +67,7 @@ bottomNavigation() {
                     children: [
                       Icon(
                         Icons.shopping_cart,
-                        color: App_Constants_Colors.app_blue_color,
+                        color: AppColors.appBlueColor,
                       ),
                       SizedBox(
                         height: screenHeight * 0.001,
@@ -76,7 +76,7 @@ bottomNavigation() {
                   )),
               icon: Icon(
                 Icons.shopping_cart,
-                color: App_Constants_Colors.app_grey_color,
+                color: AppColors.appGreyColor,
               ),
               label: "Cart",
             ),
@@ -87,7 +87,7 @@ bottomNavigation() {
                   children: [
                     Icon(
                       Icons.category,
-                      color: App_Constants_Colors.app_blue_color,
+                      color: AppColors.appBlueColor,
                     ),
                     SizedBox(
                       height: screenHeight * 0.001,
@@ -97,7 +97,7 @@ bottomNavigation() {
               ),
               icon: Icon(
                 Icons.category,
-                color: App_Constants_Colors.app_grey_color,
+                color: AppColors.appGreyColor,
               ),
               label: "Categories",
             ),
@@ -108,7 +108,7 @@ bottomNavigation() {
                   children: [
                     Icon(
                       Icons.more,
-                      color: App_Constants_Colors.app_blue_color,
+                      color: AppColors.appBlueColor,
                     ),
                     SizedBox(
                       height: screenHeight * 0.001,
@@ -118,12 +118,11 @@ bottomNavigation() {
               ),
               icon: Icon(
                 Icons.more,
-                color: App_Constants_Colors.app_grey_color,
+                color: AppColors.appGreyColor,
               ),
               label: "More",
             ),
           ],
         );
       });
-
 }

@@ -26,8 +26,8 @@ customLoginSignupButton(
           child: Text(
         text,
         style: TextStyle(
-            fontFamily: App_Fonts_Constants.heading_font_family,
-            fontSize: App_Fonts_Constants.sub_heading_font_size.sp,
+            fontFamily: AppFontsConstants.headingFontFamily,
+            fontSize: AppFontsConstants.subHeadingFontSize.sp,
             fontWeight: FontWeight.bold,
             color: textColor),
       )),

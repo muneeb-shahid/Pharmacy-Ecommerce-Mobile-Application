@@ -123,9 +123,9 @@ Widget buildImmunityBoosters(
                             Text(
                               List_of_ImmunityBoosters.price,
                               style: TextStyle(
-                                  color: App_Constants_Colors.app_black_color,
+                                  color: AppColors.appBlackColor,
                                   fontFamily:
-                                      App_Fonts_Constants.regular_font_family,
+                                      AppFontsConstants.regularFontFamily,
                                   fontWeight: FontWeight.bold),
                             ),
                           ],
@@ -145,9 +145,9 @@ Widget buildImmunityBoosters(
                               List_of_ImmunityBoosters.discount,
                               style: TextStyle(
                                   fontSize: 12,
-                                  color: App_Constants_Colors.app_white_color,
+                                  color: AppColors.appWhiteColor,
                                   fontFamily:
-                                      App_Fonts_Constants.regular_font_family,
+                                      AppFontsConstants.regularFontFamily,
                                   fontWeight: FontWeight.bold),
                             ),
                           ],
@@ -175,7 +175,7 @@ Widget buildImmunityBoosters(
                     maxLines: 2,
                     softWrap: false,
                     style:
-                        TextStyle(color: App_Constants_Colors.app_black_color),
+                        TextStyle(color: AppColors.appBlackColor),
                   ),
                 ),
               ),
@@ -183,8 +183,8 @@ Widget buildImmunityBoosters(
               Text(
                 List_of_ImmunityBoosters.price,
                 style: TextStyle(
-                    color: App_Constants_Colors.app_blue_color,
-                    fontFamily: App_Fonts_Constants.regular_font_family,
+                    color: AppColors.appBlueColor,
+                    fontFamily: AppFontsConstants.regularFontFamily,
                     fontWeight: FontWeight.bold),
               ),
               SizedBox(height: height * 0.05),
@@ -192,7 +192,7 @@ Widget buildImmunityBoosters(
                 padding: const EdgeInsets.only(left: 120),
                 child: ClipOval(
                   child: Material(
-                    color: App_Constants_Colors.app_blue_color,
+                    color: AppColors.appBlueColor,
                     child: InkWell(
                       onTap: () {},
                       child: Column(
@@ -201,7 +201,7 @@ Widget buildImmunityBoosters(
                               onPressed: () {},
                               icon: Icon(
                                 Icons.add,
-                                color: App_Constants_Colors.app_white_color,
+                                color: AppColors.appWhiteColor,
                               ))
                         ],
                       ),
